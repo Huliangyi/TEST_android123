@@ -29,3 +29,6 @@ Ring算法的时间复杂度是O\(n-1\)，n为Ring环上的NPU设备个数。
 |  ReduceScatter |  $ (p-1)(\alpha+\frac{n}{p}\beta+\frac{n}{p}\gamma)=(p-1)\alpha+\frac{p-1}{p}n\beta+\frac{p-1}{p}n\gamma $  |
 |  AllGather    | $ (p-1)(\alpha+\frac{n}{p}\beta)=(p-1)\alpha+\frac{p-1}{p}n\beta $  |
 | AllReduce     | 实现为ReduceScatter +  Allgather: <br> $ 2(p-1)\alpha+2\frac{p-1}{p}n\beta+\frac{p-1}{p}n\gamma $ |
+
+
+<table><tr><td>$ (p-1)(\alpha+\frac np\beta)=(p-1)\alpha+\frac {p-1}p n\beta $</td></tr></table>
