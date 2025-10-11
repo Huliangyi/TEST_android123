@@ -22,7 +22,7 @@ Ring算法的时间复杂度是O\(n-1\)，n为Ring环上的NPU设备个数。
 
 | 操作          | 耗时                                                         |
 | ------------- | ------------------------------------------------------------ |
-| Scatter       | $ (p-1)(\alpha+\frac np\beta)=(p-1)\alpha+\frac {p-1}p n\beta $  |
+| Scatter       | $(p-1)(\alpha+\frac np\beta)=(p-1)\alpha+\frac {p-1}p n\beta$  |
 | Gather        | $ (p-1)(\alpha+\frac np\beta)=(p-1)\alpha+\frac {p-1}p n\beta $     |
 | Broadcast     | $ (p-1)(\alpha+n\beta)=(p-1)\alpha+ (p-1)n\beta $    |
 | Reduce     | $ (p-1)(\alpha+n\beta + n\gamma)=(p-1)\alpha+ (p-1)n\beta +(p-1)n\gamma$                                        |
