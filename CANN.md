@@ -7,3 +7,4 @@
 |  ReduceScatter   |正确写法 |  $(p-1)(\alpha+\frac{n}{p}\beta+\frac{n}{p}\gamma)=(p-1)\alpha+\frac{p-1}{p}n\beta+\frac{p-1}{p}n\gamma$  |
 |  AllGather   | 错误写法 | $ (p-1)(\alpha+\frac{n}{p}\beta)=(p-1)\alpha+\frac{p-1}{p}n\beta $  |
 | AllReduce    | 正确写法 | 实现为ReduceScatter +  Allgather: <br> $2(p-1)\alpha+2\frac{p-1}{p}n\beta+\frac{p-1}{p}n\gamma$ |
+57c13776ad5beb9d1b8d1aab8c1d377b8203b721
